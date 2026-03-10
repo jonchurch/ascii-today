@@ -4,19 +4,21 @@
   "author": "Lokesh Dhakar <lokesh.dhakar@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "webpack serve --open --mode development",
+    "build": "webpack --mode production --progress"
   },
   "dependencies": {
     "figlet": "^1.11.0",
-    "vue": "^2.1.0"
+    "vue": "^2.7.16"
   },
   "devDependencies": {
-    "cross-env": "^3.0.0",
-    "css-loader": "^0.25.0",
-    "vue-loader": "^10.0.0",
-    "vue-template-compiler": "^2.1.0",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-dev-server": "^2.1.0-beta.0"
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.11.0",
+    "style-loader": "^3.3.4",
+    "vue-loader": "^15.11.1",
+    "vue-template-compiler": "^2.7.16",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
   }
 }

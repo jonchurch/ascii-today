@@ -21,7 +21,8 @@
 
 <script>
 import figlet from 'figlet';
-import {fonts as fontList} from './data/fonts.json';
+import fontsData from './data/fonts.json';
+const fontList = fontsData.fonts;
 import InfoControl from './components/InfoControl.vue';
 import InfoPanel from './components/InfoPanel.vue';
 import Preview from './components/Preview.vue';
