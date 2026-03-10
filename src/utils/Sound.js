@@ -5,6 +5,7 @@ function playSine(freq, shape = 'sine', duration = 0.2) {
   o.type = shape;
   o.frequency.value = freq;
   const g = context.createGain()
+  g.gain.value = 0.3;
   o.connect(g)
   g.connect(context.destination)
   o.start(0)
